@@ -82,7 +82,7 @@ const App: React.FC = () => {
     }
   };
 
-  // SVG Logo matching the branding: Bastion tower + shield + chain + feather wreath
+  // SVG Logo matching the branding: Bastion tower + shield + chain + feather wreath (sophisticated version)
   const BastionLogo: React.FC<{ className?: string }> = ({ className = "w-20 h-20" }) => (
     <svg 
       viewBox="0 0 120 120" 
