@@ -82,90 +82,24 @@ const App: React.FC = () => {
     }
   };
 
-  // SVG Logo matching the branding: Bastion tower + shield + chain + feather wreath (sophisticated version)
-  const BastionLogo: React.FC<{ className?: string }> = ({ className = "w-20 h-20" }) => (
-    <svg 
-      viewBox="0 0 120 120" 
-      className={className}
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Outer Feather Wreath - Sophisticated, strong masculine feathers */}
-      <g>
-        {/* Left feathers */}
-        <path d="M25 35 Q18 48 22 62" stroke="#c5a46e" strokeWidth="3.5" strokeLinecap="round"/>
-        <path d="M22 38 Q15 50 19 65" stroke="#c5a46e" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M28 32 Q22 45 25 58" stroke="#c5a46e" strokeWidth="2" strokeLinecap="round"/>
-        
-        {/* Right feathers */}
-        <path d="M95 35 Q102 48 98 62" stroke="#c5a46e" strokeWidth="3.5" strokeLinecap="round"/>
-        <path d="M98 38 Q105 50 101 65" stroke="#c5a46e" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M92 32 Q98 45 95 58" stroke="#c5a46e" strokeWidth="2" strokeLinecap="round"/>
-        
-        {/* Top connecting feathers */}
-        <path d="M35 28 Q60 18 85 28" stroke="#c5a46e" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M38 24 Q60 15 82 24" stroke="#c5a46e" strokeWidth="2" strokeLinecap="round"/>
-      </g>
-
-      {/* Main Shield / Bastion Emblem */}
-      <g>
-        {/* Outer shield shape */}
-        <path 
-          d="M35 30 L85 30 L90 55 L60 95 L30 55 Z" 
-          fill="#1e2937" 
-          stroke="#c5a46e" 
-          strokeWidth="4"
-        />
-        
-        {/* Inner shield detail */}
-        <path 
-          d="M42 38 L78 38 L82 58 L60 85 L38 58 Z" 
-          fill="#0a1628" 
-          stroke="#c5a46e" 
-          strokeWidth="2"
-        />
-        
-        {/* Bastion Tower inside shield */}
-        <g>
-          {/* Tower base */}
-          <rect x="48" y="48" width="24" height="32" rx="1" fill="#c5a46e"/>
-          
-          {/* Tower battlements */}
-          <rect x="46" y="44" width="6" height="8" fill="#c5a46e"/>
-          <rect x="57" y="44" width="6" height="8" fill="#c5a46e"/>
-          <rect x="68" y="44" width="6" height="8" fill="#c5a46e"/>
-          
-          {/* Tower windows - symbolising light / hope */}
-          <rect x="51" y="55" width="4" height="5" fill="#0a1628"/>
-          <rect x="65" y="55" width="4" height="5" fill="#0a1628"/>
-          <rect x="58" y="65" width="4" height="5" fill="#0a1628"/>
-        </g>
-      </g>
-
-      {/* Linked Chain at base - Brotherhood bond */}
-      <g>
-        <path 
-          d="M38 82 Q48 90 58 82 Q68 90 78 82" 
-          fill="none" 
-          stroke="#c5a46e" 
-          strokeWidth="5" 
-          strokeLinecap="round"
-        />
-        <path 
-          d="M40 85 Q50 93 60 85 Q70 93 80 85" 
-          fill="none" 
-          stroke="#0a1628" 
-          strokeWidth="2.5" 
-          strokeLinecap="round"
-        />
-      </g>
-
-      {/* Subtle inner glow / strength rays */}
-      <g opacity="0.6">
-        <path d="M60 52 L60 78" stroke="#c5a46e" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M52 58 L68 58" stroke="#c5a46e" strokeWidth="1" strokeLinecap="round"/>
-      </g>
-    </svg>
+  // Logo using the designed image (with feather wreath) for exact brand match
+  const BastionLogo: React.FC<{ className?: string; showText?: boolean }> = ({ 
+    className = "w-20 h-20", 
+    showText = false 
+  }) => (
+    <div className={`flex flex-col items-center ${className}`}>
+      <img 
+        src="/bastion-logo.jpg" 
+        alt="Bastion Brotherhood logo - stylized bastion tower with shield, chain and feather wreath" 
+        className="w-full h-auto object-contain"
+      />
+      {showText && (
+        <div className="mt-1 text-center">
+          <div className="font-bold text-xl tracking-tight">BASTION</div>
+          <div className="text-[9px] text-[#c5a46e] -mt-1 tracking-[2px]">BROTHERHOOD</div>
+        </div>
+      )}
+    </div>
   );
 
   return (
