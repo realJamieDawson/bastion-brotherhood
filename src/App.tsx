@@ -132,8 +132,8 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-6 border-b border-white/10">
         <div className="max-w-5xl mx-auto text-center pt-12 pb-8">
-          <div className="flex justify-center mb-8">
-            <BastionLogo className="w-40 h-40" />
+          <div className="flex justify-center mb-6">
+            <BastionLogo className="w-48 h-48" />
           </div>
           
           <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4">
