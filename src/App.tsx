@@ -331,8 +331,7 @@ const App: React.FC = () => {
                   name="interestType"
                   value={formData.interestType}
                   onChange={handleInputChange}
-                  className="form-input w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg placeholder:text-[#64748b]"
-                  placeholder="you@example.com"
+                  className="form-input w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg appearance-none cursor-pointer"
                 >
                   <option value="member">Attending meetings as a Member</option>
                   <option value="ambassador">Becoming a Bastion Ambassador</option>
