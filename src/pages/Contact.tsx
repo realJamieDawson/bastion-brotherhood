@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
         </div>
 
         {!isSubmitted ? (
-          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8">
+          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-6 md:p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Honeypot field - hidden from real users */}
               <input
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                 autoComplete="off"
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label className="block text-sm font-medium text-[#94a3b8] mb-2">Full Name *</label>
                   <input
