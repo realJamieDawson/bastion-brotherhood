@@ -82,37 +82,17 @@ const App: React.FC = () => {
     }
   };
 
-  // Logo using the designed image (with feather wreath) for exact brand match
-  const BastionLogo: React.FC<{ className?: string; showText?: boolean }> = ({ 
-    className = "w-20 h-20", 
-    showText = false 
-  }) => (
-    <div className={`flex flex-col items-center ${className}`}>
-      <img 
-        src="/logo.png" 
-        alt="Bastion Brotherhood logo - stylized bastion tower with shield, chain and feather wreath" 
-        className="w-full h-auto object-contain"
-      />
-      {showText && (
-        <div className="mt-1 text-center">
-          <div className="font-bold text-xl tracking-tight">BASTION</div>
-          <div className="text-[9px] text-[#c5a46e] -mt-1 tracking-[2px]">BROTHERHOOD</div>
-        </div>
-      )}
-    </div>
-  );
-
   return (
     <div className="min-h-screen bg-[#171f2c] text-[#f1f5f9]">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#171f2c]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <BastionLogo className="w-14 h-14 flex-shrink-0 self-center" />
-            <div className="flex flex-col justify-center leading-none">
-              <div className="font-bold text-2xl tracking-tight">BASTION</div>
-              <div className="text-[10px] text-[#c5a46e] tracking-[1.5px] -mt-0.5">BROTHERHOOD</div>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="/header-lockup.png" 
+              alt="Bastion Brotherhood" 
+              className="h-12 w-auto"
+            />
           </div>
           
           <div className="flex items-center gap-8 text-sm font-medium">
