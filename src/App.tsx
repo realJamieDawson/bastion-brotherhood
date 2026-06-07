@@ -380,10 +380,8 @@ const App: React.FC = () => {
       <footer className="py-10 px-6 text-center text-sm text-[#64748b] border-t border-white/10">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-y-4">
           <div>© {new Date().getFullYear()} Bastion Brotherhood. All rights reserved.</div>
-          <div className="flex items-center gap-6">
+          <div>
             <span>Confidential • Supportive • For Men</span>
-            <span className="hidden md:inline">•</span>
-            <a href="mailto:hello@bastionbrotherhood.co.uk" className="hover:text-[#c5a46e] transition-colors">hello@bastionbrotherhood.co.uk</a>
           </div>
         </div>
       </footer>
