@@ -182,8 +182,8 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-10 flex flex-col">
-            <div className="mb-8">
+          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="mb-8 flex flex-col items-center md:items-start">
               <div className="inline-flex p-4 bg-[#c5a46e]/10 rounded-2xl mb-6">
                 <Users className="text-[#c5a46e]" size={36} />
               </div>
@@ -203,8 +203,8 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
             </button>
           </div>
 
-          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-10 flex flex-col">
-            <div className="mb-8">
+          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="mb-8 flex flex-col items-center md:items-start">
               <div className="inline-flex p-4 bg-[#c5a46e]/10 rounded-2xl mb-6">
                 <Award className="text-[#c5a46e]" size={36} />
               </div>
@@ -236,7 +236,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
         </div>
 
         {!isSubmitted ? (
-          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-10 md:p-14">
+          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8 md:p-10 relative">
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

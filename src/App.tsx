@@ -44,7 +44,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#171f2c] text-[#f1f5f9]">
+    <div className="min-h-screen bg-[#171f2c] text-[#f1f5f9] overflow-x-hidden">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#171f2c]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
