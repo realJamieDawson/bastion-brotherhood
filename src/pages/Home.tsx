@@ -17,7 +17,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
     firstName: '',
     lastName: '',
     email: '',
-    interestType: 'member',
+    interestType: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
             firstName: '',
             lastName: '',
             email: '',
-            interestType: 'member',
+            interestType: '',
           });
           setIsSubmitted(false);
         }, 4500);
@@ -86,12 +86,12 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
       <section className="pt-20 pb-16 px-6 border-b border-white/10">
         <div className="max-w-5xl mx-auto text-center pt-12 pb-8">
           <div className="flex justify-center mb-6">
-            <div className="w-48 h-48">
+            <div className="w-40 h-40 md:w-48 md:h-48">
               <img src="/logo.png" alt="Bastion Brotherhood" className="w-full h-auto" />
             </div>
           </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter mb-4 leading-none">
             BASTION<br />BROTHERHOOD
           </h1>
           <p className="text-2xl md:text-3xl text-[#c5a46e] font-light tracking-tight mb-8">
@@ -260,8 +260,10 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
                   name="interestType" 
                   value={formData.interestType} 
                   onChange={handleInputChange} 
+                  required
                   className="w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg appearance-none cursor-pointer"
                 >
+                  <option value="" disabled hidden>Please choose...</option>
                   <option value="member">Attending meetings as a Member</option>
                   <option value="ambassador">Becoming a Bastion Ambassador</option>
                 </select>
