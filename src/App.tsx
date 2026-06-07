@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Users, Award, Heart, Shield, ArrowRight, CheckCircle } from 'lucide-react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Contact from './pages/Contact';
 import Press from './pages/Press';
 
@@ -103,15 +103,8 @@ const App: React.FC = () => {
     </div>
   );
 
-  const location = useLocation();
-  const isHome = location.pathname === '/';
-
-  // Scroll to section helper (only works on home)
+  // Scroll to section helper
   const scrollToSection = (id: string) => {
-    if (!isHome) {
-      window.location.href = `/#${id}`;
-      return;
-    }
     const element = document.getElementById(id);
     if (element) {
       const offset = 80;
@@ -119,6 +112,8 @@ const App: React.FC = () => {
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition - bodyRect - offset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${id}`;
     }
   };
 
@@ -136,13 +131,9 @@ const App: React.FC = () => {
           </Link>
           
           <div className="flex items-center gap-8 text-sm font-medium">
-            {isHome && (
-              <>
-                <button onClick={() => scrollToSection('mission')} className="hover:text-[#c5a46e] transition-colors">Mission</button>
-                <button onClick={() => scrollToSection('join')} className="hover:text-[#c5a46e] transition-colors">Join Us</button>
-                <button onClick={() => scrollToSection('register')} className="hover:text-[#c5a46e] transition-colors">Register Interest</button>
-              </>
-            )}
+            <button onClick={() => scrollToSection('mission')} className="hover:text-[#c5a46e] transition-colors">Mission</button>
+            <button onClick={() => scrollToSection('join')} className="hover:text-[#c5a46e] transition-colors">Join Us</button>
+            <button onClick={() => scrollToSection('register')} className="hover:text-[#c5a46e] transition-colors">Register Interest</button>
             <Link to="/contact" className="hover:text-[#c5a46e] transition-colors">Contact</Link>
             <Link to="/press" className="hover:text-[#c5a46e] transition-colors">Press</Link>
             
