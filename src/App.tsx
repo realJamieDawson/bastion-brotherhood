@@ -41,42 +41,40 @@ const App: React.FC = () => {
 
     setIsSubmitting(true);
 
-    // For production: Replace this with your Formspree endpoint
-    // 1. Go to https://formspree.io and create a free form
-    // 2. Replace the action URL below with your form endpoint
-    // 3. Remove the client-side success and let Formspree handle redirect or use fetch
     try {
-      // Simulate API call / or use Formspree
-      // Example Formspree integration (uncomment and add your form ID):
-      /*
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xbdegqrk', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
-          ...formData,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          interestType: formData.interestType,
           _subject: 'New Bastion Brotherhood Interest Registration',
         }),
       });
-      if (!response.ok) throw new Error('Submission failed');
-      */
 
-      // For now: simulate success (replace with real integration)
-      await new Promise(resolve => setTimeout(resolve, 800));
-      
-      setIsSubmitted(true);
-      
-      // Optional: Reset form after success
-      setTimeout(() => {
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          interestType: 'member',
-        });
-        setIsSubmitted(false);
-      }, 4500);
+      if (response.ok) {
+        setIsSubmitted(true);
+
+        // Reset form after success
+        setTimeout(() => {
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            interestType: 'member',
+          });
+          setIsSubmitted(false);
+        }, 4500);
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
-      alert('Something went wrong. Please try again or email us directly.');
+      alert('Something went wrong. Please try again or email us directly at hello@bastionbrotherhood.co.uk');
     } finally {
       setIsSubmitting(false);
     }
