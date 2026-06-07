@@ -252,7 +252,12 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
 
               <div>
                 <label className="block text-sm font-medium text-[#94a3b8] mb-2">I am interested in...</label>
-                <select name="interestType" value={formData.interestType} onChange={handleInputChange} className="w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg">
+                <select 
+                  name="interestType" 
+                  value={formData.interestType} 
+                  onChange={handleInputChange} 
+                  className="w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg appearance-none cursor-pointer"
+                >
                   <option value="member">Attending meetings as a Member</option>
                   <option value="ambassador">Becoming a Bastion Ambassador</option>
                 </select>
