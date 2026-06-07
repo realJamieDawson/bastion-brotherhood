@@ -109,7 +109,7 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/header-lockup.png" 
+              src="/bastionheader2.png" 
               alt="Bastion Brotherhood" 
               className="h-12 w-auto"
             />
