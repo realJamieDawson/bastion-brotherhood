@@ -191,7 +191,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
               <p className="text-[#94a3b8] text-lg">Join our regular meetings and become part of a growing community of men supporting each other.</p>
             </div>
             
-            <ul className="space-y-4 text-[#94a3b8] mb-10 flex-1">
+            <ul className="space-y-3 md:space-y-4 text-sm md:text-base text-[#94a3b8] mb-8 md:mb-10 flex-1">
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Weekly in-person meetings in St Helens</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Confidential peer support circles</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Guest speakers and practical tools</li>
@@ -212,7 +212,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
               <p className="text-[#94a3b8] text-lg">Take a leadership role in your community. Help us reach more men who need support.</p>
             </div>
             
-            <ul className="space-y-4 text-[#94a3b8] mb-10 flex-1">
+            <ul className="space-y-3 md:space-y-4 text-sm md:text-base text-[#94a3b8] mb-8 md:mb-10 flex-1">
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Early access to training and resources</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Help shape the organisation locally</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Support peers and promote meetings</li>
