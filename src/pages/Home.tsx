@@ -103,6 +103,9 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
               Bastion Brotherhood is a men's mental health support organisation launching soon in St Helens. 
               Please register your interest in attending meetings or becoming a Bastion Ambassador below.
             </p>
+            <p className="mt-3 text-[#c5a46e] font-medium">
+              All meetings are completely free to attend.
+            </p>
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -229,6 +232,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
           <div className="uppercase tracking-[3px] text-[#c5a46e] text-sm mb-3">Pre-Launch Registration</div>
           <h2 className="text-5xl font-bold tracking-tight">Register Your Interest</h2>
           <p className="mt-4 text-xl text-[#94a3b8]">We'll be in touch as soon as we have dates and venues confirmed.</p>
+          <p className="mt-2 text-sm text-[#c5a46e]">All meetings are completely free to attend.</p>
         </div>
 
         {!isSubmitted ? (
