@@ -192,7 +192,7 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Weekly in-person meetings in St Helens</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Confidential peer support circles</li>
               <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Guest speakers and practical tools</li>
-              <li className="flex items-start gap-3"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> No cost to attend • Open to all men 18+</li>
+              <li className="flex items-start gap-3 font-medium text-[#c5a46e]"><CheckCircle className="text-[#c5a46e] mt-1 flex-shrink-0" size={20} /> Completely free to attend • Open to all men 18+</li>
             </ul>
             
             <button onClick={() => scrollToSection('register')} className="mt-auto inline-flex items-center justify-center gap-2 w-full py-4 bg-white/5 hover:bg-white/10 border border-white/20 rounded-2xl font-semibold transition-all">
