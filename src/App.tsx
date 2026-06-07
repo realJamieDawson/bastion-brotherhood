@@ -247,7 +247,7 @@ const App: React.FC = () => {
           </div>
 
           {/* Ambassador Card */}
-          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-10 flex flex-col ring-1 ring-[#c5a46e]/30">
+          <div className="info-card bg-[#1e2937] border border-white/10 rounded-3xl p-10 flex flex-col">
             <div className="mb-8">
               <div className="inline-flex p-4 bg-[#c5a46e]/10 rounded-2xl mb-6">
                 <Award className="text-[#c5a46e]" size={36} />
