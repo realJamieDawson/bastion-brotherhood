@@ -295,7 +295,8 @@ const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
       {/* Final CTA */}
       <section className="bg-[#1e2937] border-t border-white/10 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-2xl text-[#94a3b8] italic">"You don't have to face it alone. We're building this together."</p>
+          <p className="text-2xl text-[#94a3b8] italic">"Asking for help isn’t a sign of weakness. It’s a sign of strength."</p>
+          <p className="mt-2 text-sm text-[#64748b]">— Barack Obama</p>
           <div className="mt-8 flex justify-center">
             <div className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-[#c5a46e]">
               <Heart size={16} /> St Helens, Merseyside • Launching 2026
