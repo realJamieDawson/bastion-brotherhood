@@ -89,7 +89,7 @@ const App: React.FC = () => {
   }) => (
     <div className={`flex flex-col items-center ${className}`}>
       <img 
-        src="/bastion-logo.jpeg" 
+        src="/bastion-logo.png" 
         alt="Bastion Brotherhood logo - stylized bastion tower with shield, chain and feather wreath" 
         className="w-full h-auto object-contain"
       />
@@ -109,9 +109,9 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <BastionLogo className="w-11 h-11" />
-            <div>
+            <div className="flex flex-col justify-center leading-none">
               <div className="font-bold text-2xl tracking-tight">BASTION</div>
-              <div className="text-[10px] text-[#c5a46e] -mt-1.5 tracking-[3px]">BROTHERHOOD</div>
+              <div className="text-[10px] text-[#c5a46e] tracking-[3px] mt-0.5">BROTHERHOOD</div>
             </div>
           </div>
           
