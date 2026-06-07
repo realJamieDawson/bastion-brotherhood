@@ -12,26 +12,26 @@ const Press: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8 text-center">
+        <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8 md:p-12 text-center">
           <h2 className="text-2xl font-bold tracking-tight mb-4">Press Enquiries</h2>
           
-          <div className="max-w-sm mx-auto">
-            <p className="text-[#94a3b8] mb-6">
+          <div className="max-w-md mx-auto">
+            <p className="text-lg text-[#94a3b8] mb-8">
               We're happy to provide information, interviews, or assets for media coverage.
             </p>
 
-            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-6">
+            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-6 mx-auto max-w-[280px] w-full">
               <p className="text-sm text-[#64748b] mb-1">Press Contact</p>
               <a 
                 href="mailto:press@bastionbrotherhood.co.uk" 
-                className="text-xl font-semibold text-[#c5a46e] hover:underline"
+                className="text-xl md:text-2xl font-semibold text-[#c5a46e] hover:underline break-all"
               >
                 press@bastionbrotherhood.co.uk
               </a>
             </div>
 
-            <p className="mt-6 text-sm text-[#64748b]">
-              We aim to respond within 24 hours.
+            <p className="mt-8 text-sm text-[#64748b]">
+              We aim to respond to all press enquiries within 24 hours.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Press: React.FC = () => {
           <h3 className="text-xl font-bold tracking-tight mb-3">About Bastion Brotherhood</h3>
           <p className="text-[#94a3b8] text-sm max-w-2xl mx-auto">
             Bastion Brotherhood is a men's mental health support organisation launching in St Helens, Merseyside. 
-            We provide confidential peer support meetings for men who want to talk openly about their mental health.
+            We provide confidential peer support meetings and community for men who want to talk openly about their mental health.
           </p>
         </div>
       </div>
