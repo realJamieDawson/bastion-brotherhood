@@ -56,13 +56,9 @@ const App: React.FC = () => {
           </button>
           
           <div className="flex items-center gap-8 text-sm font-medium">
-            {currentPage === 'home' && (
-              <>
-                <button onClick={() => scrollToSection('mission')} className="hover:text-[#c5a46e] transition-colors">Mission</button>
-                <button onClick={() => scrollToSection('join')} className="hover:text-[#c5a46e] transition-colors">Join Us</button>
-                <button onClick={() => scrollToSection('register')} className="hover:text-[#c5a46e] transition-colors">Register Interest</button>
-              </>
-            )}
+            <button onClick={() => scrollToSection('mission')} className="hover:text-[#c5a46e] transition-colors">Mission</button>
+            <button onClick={() => scrollToSection('join')} className="hover:text-[#c5a46e] transition-colors">Join Us</button>
+            <button onClick={() => scrollToSection('register')} className="hover:text-[#c5a46e] transition-colors">Register Interest</button>
             <button onClick={() => goToPage('contact')} className="hover:text-[#c5a46e] transition-colors">Contact</button>
             <button onClick={() => goToPage('press')} className="hover:text-[#c5a46e] transition-colors">Press</button>
             

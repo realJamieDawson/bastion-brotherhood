@@ -72,14 +72,14 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#171f2c] text-[#f1f5f9] pt-20">
-      <div className="max-w-3xl mx-auto px-6 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold tracking-tight mb-4">Contact Us</h1>
-          <p className="text-xl text-[#94a3b8]">We'd love to hear from you. Send us a message and we'll get back to you soon.</p>
+      <div className="max-w-3xl mx-auto px-6 py-8">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold tracking-tight mb-3">Contact Us</h1>
+          <p className="text-lg text-[#94a3b8]">We'd love to hear from you.</p>
         </div>
 
         {!isSubmitted ? (
-          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-10">
+          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Honeypot field - hidden from real users */}
               <input
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  rows={6}
+                  rows={5}
                   className="w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-3xl px-6 py-4 text-lg resize-y"
                   placeholder="How can we help you?"
                 />
@@ -147,24 +147,24 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-5 text-xl font-semibold bg-[#c5a46e] hover:bg-[#a67c52] disabled:opacity-70 text-[#0a1628] rounded-2xl flex items-center justify-center gap-3 mt-4 transition-all"
+                className="w-full py-4 text-lg font-semibold bg-[#c5a46e] hover:bg-[#a67c52] disabled:opacity-70 text-[#0a1628] rounded-2xl flex items-center justify-center gap-3 mt-2 transition-all"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
-                {!isSubmitting && <ArrowRight size={22} />}
+                {!isSubmitting && <ArrowRight size={20} />}
               </button>
 
-              <p className="text-center text-sm text-[#64748b] mt-4">
+              <p className="text-center text-sm text-[#64748b] mt-3">
                 We usually respond within 48 hours.
               </p>
             </form>
           </div>
         ) : (
-          <div className="bg-[#1e2937] border border-[#c5a46e]/30 rounded-3xl p-16 text-center">
-            <div className="inline-flex p-5 bg-[#c5a46e]/10 rounded-full mb-8">
-              <CheckCircle className="text-[#c5a46e]" size={56} />
+          <div className="bg-[#1e2937] border border-[#c5a46e]/30 rounded-3xl p-12 text-center">
+            <div className="inline-flex p-4 bg-[#c5a46e]/10 rounded-full mb-6">
+              <CheckCircle className="text-[#c5a46e]" size={48} />
             </div>
-            <h3 className="text-4xl font-bold tracking-tight mb-4">Thank you for reaching out.</h3>
-            <p className="text-xl text-[#94a3b8]">We've received your message and will get back to you soon.</p>
+            <h3 className="text-3xl font-bold tracking-tight mb-3">Thank you for reaching out.</h3>
+            <p className="text-lg text-[#94a3b8]">We've received your message and will get back to you soon.</p>
           </div>
         )}
       </div>
