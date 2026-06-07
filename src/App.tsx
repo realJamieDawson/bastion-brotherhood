@@ -82,6 +82,26 @@ const App: React.FC = () => {
     }
   };
 
+  // Logo using the designed image (with feather wreath) for exact brand match
+  const BastionLogo: React.FC<{ className?: string; showText?: boolean }> = ({ 
+    className = "w-20 h-20", 
+    showText = false 
+  }) => (
+    <div className={`flex flex-col items-center ${className}`}>
+      <img 
+        src="/logo.png" 
+        alt="Bastion Brotherhood logo - stylized bastion tower with shield, chain and feather wreath" 
+        className="w-full h-auto object-contain"
+      />
+      {showText && (
+        <div className="mt-1 text-center">
+          <div className="font-bold text-xl tracking-tight">BASTION</div>
+          <div className="text-[9px] text-[#c5a46e] -mt-1 tracking-[2px]">BROTHERHOOD</div>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-[#171f2c] text-[#f1f5f9]">
       {/* Navbar */}
