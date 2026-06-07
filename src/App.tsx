@@ -109,9 +109,9 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <BastionLogo className="w-14 h-14 flex-shrink-0 self-center" />
-            <div className="flex flex-col justify-center leading-none w-[182px]">
-              <div className="font-bold text-2xl tracking-tight text-center">BASTION</div>
-              <div className="text-[10px] text-[#c5a46e] tracking-[16px] text-center">BROTHERHOOD</div>
+            <div className="flex flex-col justify-center leading-none">
+              <div className="font-bold text-2xl tracking-tight">BASTION</div>
+              <div className="text-[10px] text-[#c5a46e] tracking-[4px] -mt-0.5">BROTHERHOOD</div>
             </div>
           </div>
           
