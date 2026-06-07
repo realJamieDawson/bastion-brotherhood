@@ -111,7 +111,7 @@ const App: React.FC = () => {
             <BastionLogo className="w-14 h-14 flex-shrink-0 self-center" />
             <div className="flex flex-col justify-center leading-none">
               <div className="font-bold text-2xl tracking-tight">BASTION</div>
-              <div className="text-[10px] text-[#c5a46e] tracking-[4px] -mt-0.5">BROTHERHOOD</div>
+              <div className="text-[10px] text-[#c5a46e] tracking-[1.5px] -mt-0.5">BROTHERHOOD</div>
             </div>
           </div>
           
