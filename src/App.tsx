@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Heart } from 'lucide-react';
+import { Users, Award, Shield, ArrowRight, CheckCircle } from 'lucide-react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Contact from './pages/Contact';
 import Press from './pages/Press';
