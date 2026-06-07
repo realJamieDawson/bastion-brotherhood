@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.bastionbrotherhood.co.uk/sitemap.xml
