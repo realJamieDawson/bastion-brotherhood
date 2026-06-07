@@ -74,7 +74,7 @@ const App: React.FC = () => {
         throw new Error('Form submission failed');
       }
     } catch (error) {
-      alert('Something went wrong. Please try again or email us directly at hello@bastionbrotherhood.co.uk');
+      alert('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
