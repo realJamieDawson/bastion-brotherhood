@@ -108,8 +108,8 @@ const App: React.FC = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#171f2c]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <BastionLogo className="w-14 h-14" />
-            <div className="flex flex-col justify-center -space-y-0.5">
+            <BastionLogo className="w-14 h-14 flex-shrink-0 self-center" />
+            <div className="flex flex-col justify-center leading-none">
               <div className="font-bold text-2xl tracking-tight">BASTION</div>
               <div className="text-[10px] text-[#c5a46e] tracking-[3px]">BROTHERHOOD</div>
             </div>
@@ -331,7 +331,8 @@ const App: React.FC = () => {
                   name="interestType"
                   value={formData.interestType}
                   onChange={handleInputChange}
-                  className="form-input w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg appearance-none cursor-pointer"
+                  className="form-input w-full bg-[#0a1628] border border-white/20 focus:border-[#c5a46e] rounded-2xl px-6 py-4 text-lg placeholder:text-[#64748b]"
+                  placeholder="you@example.com"
                 >
                   <option value="member">Attending meetings as a Member</option>
                   <option value="ambassador">Becoming a Bastion Ambassador</option>
