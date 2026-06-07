@@ -20,11 +20,11 @@ const Press: React.FC = () => {
               We're happy to provide information, interviews, or assets for media coverage.
             </p>
 
-            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-6 mx-auto max-w-[280px] w-full">
+            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-5 mx-auto max-w-xs w-full">
               <p className="text-sm text-[#64748b] mb-1">Press Contact</p>
               <a 
                 href="mailto:press@bastionbrotherhood.co.uk" 
-                className="text-xl md:text-2xl font-semibold text-[#c5a46e] hover:underline break-all"
+                className="text-lg md:text-xl font-semibold text-[#c5a46e] hover:underline whitespace-nowrap"
               >
                 press@bastionbrotherhood.co.uk
               </a>
@@ -36,7 +36,20 @@ const Press: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-center">
+        {/* Press Releases Section */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold tracking-tight mb-6 text-center">Press Releases</h3>
+          <div className="bg-[#1e2937] border border-white/10 rounded-3xl p-8 text-center">
+            <p className="text-[#94a3b8]">
+              Official press releases from Bastion Brotherhood will be published here.
+            </p>
+            <p className="mt-2 text-sm text-[#64748b]">
+              Check back soon for our first announcements.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
           <h3 className="text-xl font-bold tracking-tight mb-3">About Bastion Brotherhood</h3>
           <p className="text-[#94a3b8] text-sm max-w-2xl mx-auto">
             Bastion Brotherhood is a men's mental health support organisation launching in St Helens, Merseyside. 
