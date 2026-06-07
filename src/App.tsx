@@ -107,11 +107,11 @@ const App: React.FC = () => {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#171f2c]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <BastionLogo className="w-11 h-11" />
-            <div className="flex flex-col justify-center leading-none">
+          <div className="flex items-center gap-4">
+            <BastionLogo className="w-14 h-14" />
+            <div className="flex flex-col justify-center -space-y-0.5">
               <div className="font-bold text-2xl tracking-tight">BASTION</div>
-              <div className="text-[10px] text-[#c5a46e] tracking-[3px] mt-0.5">BROTHERHOOD</div>
+              <div className="text-[10px] text-[#c5a46e] tracking-[3px]">BROTHERHOOD</div>
             </div>
           </div>
           
@@ -133,7 +133,7 @@ const App: React.FC = () => {
       <section className="pt-20 pb-16 px-6 border-b border-white/10">
         <div className="max-w-5xl mx-auto text-center pt-12 pb-8">
           <div className="flex justify-center mb-8">
-            <BastionLogo className="w-28 h-28" />
+            <BastionLogo className="w-40 h-40" />
           </div>
           
           <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4">
