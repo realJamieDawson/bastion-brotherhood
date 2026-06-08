@@ -20,7 +20,7 @@ const Press: React.FC = () => {
               We're happy to provide information, interviews, or assets for media coverage.
             </p>
 
-            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-5 mx-auto max-w-xs w-full">
+            <div className="bg-[#0a1628] border border-white/10 rounded-2xl p-6 mx-auto max-w-sm md:max-w-md w-full">
               <p className="text-sm text-[#64748b] mb-1">Press Contact</p>
               <a 
                 href="mailto:press@bastionbrotherhood.co.uk" 
